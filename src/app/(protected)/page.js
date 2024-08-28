@@ -4,7 +4,7 @@ import axiosInstance from "@/lib/axiosInstance";
 import Image from "next/image";
 export default async function Home() {
     const response = await axiosInstance({
-        url: "http://localhost:3000/api/orders",
+        url: "https://nextjs-appwrite-auth-ssr.vercel.app/api/orders",
         method: "get",
     });
     const orders = response.data.orders;
